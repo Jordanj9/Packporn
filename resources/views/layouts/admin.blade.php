@@ -126,55 +126,12 @@
                     <li><a href="{{route('home')}}"><i class="fa fa-home"></i> <span>Inicio</span></a></li>
                 @endif
                 @if(Auth::user()->rol=='ADMINISTRADOR')
-                    @if($location=='users')
-                        <li class="active"><a href="{{route('user.index')}}"><i class="fa fa-users"></i>
-                                <span>Usuarios</span></a></li>
-                    @else
-                        <li><a href="{{route('user.index')}}"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
-                    @endif
-                    @if($location=='noticias')
-                        <li class="active"><a href="{{route('noticias.index')}}"><i class="fa fa-bullhorn"></i> <span>Noticias</span></a>
+                    @if($location=='solicitud')
+                        <li class="active"><a href="{{route('noticias.index')}}"><i class="fa fa-bullhorn"></i> <span>Solicitud</span></a>
                         </li>
                     @else
-                        <li><a href="{{route('noticias.index')}}"><i class="fa fa-bullhorn"></i>
-                                <span>Noticias</span></a></li>
-                    @endif
-                    @if($location=='documentos')
-                        <li class="active"><a href="{{route('documentos.index')}}"><i class="fa fa-file-pdf-o"></i>
-                                <span>Documentos</span></a></li>
-                    @else
-                        <li><a href="{{route('documentos.index')}}"><i class="fa fa-file-pdf-o"></i>
-                                <span>Documentos</span></a></li>
-                    @endif
-                    @if($location=='consejales')
-                        <li class="active"><a href="{{route('consejales.index')}}"><i class="fa fa-credit-card"></i>
-                                <span>Consejales</span></a></li>
-                    @else
-                        <li><a href="{{route('consejales.index')}}"><i class="fa fa-credit-card"></i>
-                                <span>Consejales</span></a></li>
-                    @endif
-                    @if($location=='contacto')
-                        <li class="active"><a href="{{route('contacto.index')}}"><i class="fa fa-inbox"></i> <span>Contactenos</span></a>
-                        </li>
-                    @else
-                        <li><a href="{{route('contacto.index')}}"><i class="fa fa-inbox"></i>
-                                <span>Contactenos</span></a></li>
-                    @endif
-                    @if($location=='pqr')
-                        <li class="active"><a href="{{route('pqr.index')}}"><i class="fa fa-commenting"></i> <span>PQR/FAQ</span></a>
-                        </li>
-                    @else
-                        <li><a href="{{route('pqr.index')}}"><i class="fa fa-commenting"></i> <span>PQR/FAQ</span></a>
-                        </li>
-                    @endif
-                @endif
-                @if(Auth::user()->rol=='PQR')
-                    @if($location=='pqr')
-                        <li class="active"><a href="{{route('pqr.index')}}"><i class="fa fa-commenting"></i> <span>PQR/FAQ</span></a>
-                        </li>
-                    @else
-                        <li><a href="{{route('pqr.index')}}"><i class="fa fa-commenting"></i> <span>PQR/FAQ</span></a>
-                        </li>
+                        <li><a href="{{route('solicitud.index')}}"><i class="fa fa-bullhorn"></i>
+                                <span>Solicitud</span></a></li>
                     @endif
                 @endif
                 <li>
@@ -212,7 +169,7 @@
         <div class="pull-right hidden-xs">
             <b>Version</b> 1.0.0
         </div>
-        <strong> &copy;2018 <a href="#">Jordan Cuadro</a></strong>
+        <strong> &copy;2019 <a href="#">Alberto Rojas</a></strong>
     </footer>
 </div>
 <!-- ./wrapper -->

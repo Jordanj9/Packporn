@@ -36,78 +36,10 @@
             @if(Auth::user()->rol=='ADMINISTRADOR')
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box">
-                        <span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span>
+                        <span class="info-box-icon bg-blue"><i class="material-icons">contact_mail</i></span>
                         <div class="info-box-content">
                             <span class="info-box-text">Gestión De</span>
-                            <a href="{{route('user.index')}}" class="info-box-number">Usuarios</a>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-blue"><i class="fa fa-bullhorn"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Gestión De</span>
-                            <a href="{{route('noticias.index')}}" class="info-box-number">Noticias</a>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-red"><i class="fa fa-file-pdf-o"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Gestión De</span>
-                            <a href="{{route('documentos.index')}}" class="info-box-number">Documentos</a>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-fuchsia"><i class="fa fa-credit-card"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Gestión De</span>
-                            <a href="{{route('consejales.index')}}" class="info-box-number">Consejales</a>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-gray"><i class="fa fa-inbox"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Gestión De</span>
-                            <a href="{{route('contacto.index')}}" class="info-box-number">Contáctenos</a>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-purple"><i class="fa fa-commenting"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Gestión De</span>
-                            <a href="{{route('pqr.index')}}" class="info-box-number">PQR</a>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-            @endif
-            @if(Auth::user()->rol=='PQR')
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-purple"><i class="fa fa-commenting"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Gestión De</span>
-                            <a href="{{route('pqr.index')}}" class="info-box-number">PQR (Peticiones, Quejas y Reclamos)</a>
+                            <a href="{{route('solicitud.index')}}" class="info-box-number">Solicitud</a>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
