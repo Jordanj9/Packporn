@@ -18,6 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('solicitud/publico/crear/', 'SolicitudController@store')->name('solicitud.store');
+
 //GRUPO DE RUTAS PARA LA ADMINISTRACIÓN
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function() {
     //SOLICITUD

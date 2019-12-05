@@ -119,7 +119,7 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header"><h4>MENÚ PRINCIPAL</h4></li>
-                @if($location=='home')
+                @if($location=='inicio')
                     <li class="active"><a href="{{route('home')}}"><i class="fa fa-home"></i> <span>Inicio</span></a>
                     </li>
                 @else
@@ -127,7 +127,7 @@
                 @endif
                 @if(Auth::user()->rol=='ADMINISTRADOR')
                     @if($location=='solicitud')
-                        <li class="active"><a href="{{route('noticias.index')}}"><i class="fa fa-bullhorn"></i> <span>Solicitud</span></a>
+                        <li class="active"><a href="{{route('solicitud.index')}}"><i class="fa fa-bullhorn"></i> <span>Solicitud</span></a>
                         </li>
                     @else
                         <li><a href="{{route('solicitud.index')}}"><i class="fa fa-bullhorn"></i>
