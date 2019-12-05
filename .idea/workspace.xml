@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e18e9f7-b479-4f9f-905b-bc3728c45d23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/NotificacionSolicitud.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/NotificacionSolicitud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SolicitudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SolicitudController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +161,9 @@
       <workItem from="1575046519826" duration="166000" />
       <workItem from="1575064814272" duration="619000" />
       <workItem from="1575514135358" duration="6954000" />
-      <workItem from="1575550699747" duration="1198000" />
+      <workItem from="1575550699747" duration="1410000" />
+      <workItem from="1575568496089" duration="1347000" />
+      <workItem from="1575570700880" duration="891000" />
     </task>
     <task id="LOCAL-00001" summary="Version 2.0 29 de Noviembre 2019 Jordan">
       <created>1575046660733</created>
@@ -177,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575552062158</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Version 3.1 05 de Diciembre 2019 Jordan">
+      <created>1575552198189</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575552198191</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +209,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Version 2.0 29 de Noviembre 2019 Jordan" />
     <MESSAGE value="Version 3.0 29 de Diciembre 2019 Jordan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 3.0 29 de Diciembre 2019 Jordan" />
+    <MESSAGE value="Version 3.1 05 de Diciembre 2019 Jordan" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 3.1 05 de Diciembre 2019 Jordan" />
   </component>
 </project>
