@@ -24,6 +24,8 @@ Route::get('/galeria', 'HomeController@galeria')->name('galeria');
 Route::get('/preguntas', 'HomeController@preguntas')->name('preguntas');
 
 
+Route::post('solicitud/publico/crear/', 'SolicitudController@store')->name('solicitud.store');
+
 //GRUPO DE RUTAS PARA LA ADMINISTRACIÓN
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function() {
     //SOLICITUD

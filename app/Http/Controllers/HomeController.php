@@ -25,7 +25,7 @@ class HomeController extends Controller
     {
         $this->middleware('auth');
         return view('home')
-            ->with('location', 'home');
+            ->with('location', 'inicio');
     }
 
     public function inicio()
