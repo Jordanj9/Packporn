@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Pai;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -30,25 +31,34 @@ class HomeController extends Controller
 
     public function inicio()
     {
+        $paises = Pai::all()->pluck('nombre', 'id');
         return view('welcome.index')
-            ->with('location', 'inicio');
+            ->with('location', 'inicio')
+            ->with('paises', $paises);
     }
 
     public function contenido()
     {
+        $paises = Pai::all()->pluck('nombre', 'id');
         return view('welcome.contenido')
-            ->with('location', 'contenido');
+            ->with('location', 'contenido')
+            ->with('paises', $paises);
     }
 
     public function galeria()
     {
+        $paises = Pai::all()->pluck('nombre', 'id');
         return view('welcome.galeria')
-            ->with('location', 'galeria');
+            ->with('location', 'galeria')
+            ->with('paises', $paises);
     }
+
     public function preguntas()
     {
+        $paises = Pai::all()->pluck('nombre', 'id');
         return view('welcome.preguntas_frecuentes')
-            ->with('location', 'preguntas');
+            ->with('location', 'preguntas')
+            ->with('paises', $paises);
     }
 
 

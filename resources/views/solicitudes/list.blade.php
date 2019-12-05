@@ -45,17 +45,18 @@
                             <td>{{$t->alias}}</td>
                             <td>{{$t->email}}</td>
                             <td>{{$t->tipopack}}</td>
-                            <td>@if($t->sexo=='M') <label class="label label-primary">MASCULINO</label> @else <label
-                                    class="label label-info">FEMENINO</label> @endif</td>
+                            <td>@if($t->sexo=='M') <label class="label label-primary">MASCULINO</label>
+                                @elseif($t->sexo == 'F')
+                                    <label class="label label-info">FEMENINO</label>
+                                @else
+                                    <label class="label label-warning">NO PREFIERE DECIR</label>
+                                @endif</td>
                             <td>{{$t->preferencia}}</td>
                             <td>{{$t->subpreferencia}}</td>
                             <td>{{$t->pais->nombre}}</td>
                             <td>{{$t->estado}}</td>
                             <td>{{$t->created_at}}</td>
                             <td>
-                                <a onclick="ir(this.id)" id="{{$t->id}}" data-toggle="modal"
-                                   data-target="#modal-default" style="color: blue; margin-left: 10px;cursor: pointer;"><i
-                                        class="fa fa-lock"></i></a>
                                 <a href="{{route('solicitud.delete',$t->id)}}" style="color: red; margin-left: 10px;"><i
                                         class="fa fa-remove"></i></a>
                             </td>
@@ -67,21 +68,21 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modal-default">
-        <div class="modal-dialog">
+    <div class="modal" id="modal-default" role="dialog">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h5 class="modal-title">Cambiar Estado</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Cambiar Estado</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-control">
+                    <form>
                         @csrf
                         <input type="hidden" name="id" id="id"/>
                         <div class="form-group">
                             <div class="col-md-2">
-                                <label class="col-md-2 control-label">Nueva Contraseña</label>
+                                <label for="nueva" class="col-md-2">Nueva Contraseña</label>
                             </div>
                             <div class="col-md-10">
                                 <input class="form-control" type="password" required="required" name="password">
@@ -94,6 +95,8 @@
                             </button>
                         </div>
                     </form>
+                </div>
+                <div class="modal-footer">
                 </div>
             </div>
             <!-- /.modal-content -->

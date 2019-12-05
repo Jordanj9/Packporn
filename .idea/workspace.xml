@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="3e18e9f7-b479-4f9f-905b-bc3728c45d23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SolicitudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SolicitudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/solicitudes/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/solicitudes/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome/contenido.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/contenido.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome/galeria.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/galeria.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome/preguntas_frecuentes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/preguntas_frecuentes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +128,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tickets/resources/views/general/empleado/create.blade.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tickets/app/Http/Controllers/EmpleadoController.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -163,7 +171,7 @@
       <workItem from="1575514135358" duration="6954000" />
       <workItem from="1575550699747" duration="1410000" />
       <workItem from="1575568496089" duration="1347000" />
-      <workItem from="1575570700880" duration="3723000" />
+      <workItem from="1575570700880" duration="10279000" />
     </task>
     <task id="LOCAL-00001" summary="Version 2.0 29 de Noviembre 2019 Jordan">
       <created>1575046660733</created>
@@ -193,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575571643932</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Version 4.3 05 de Diciembre 2019 14:34 Jordan">
+      <created>1575574458783</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575574458783</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +233,7 @@
     <MESSAGE value="Version 3.0 29 de Diciembre 2019 Jordan" />
     <MESSAGE value="Version 3.1 05 de Diciembre 2019 Jordan" />
     <MESSAGE value="Version 4.2 05 de Diciembre 2019 13:46 Jordan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 4.2 05 de Diciembre 2019 13:46 Jordan" />
+    <MESSAGE value="Version 4.3 05 de Diciembre 2019 14:34 Jordan" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 4.3 05 de Diciembre 2019 14:34 Jordan" />
   </component>
 </project>

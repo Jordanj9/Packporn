@@ -12,8 +12,10 @@
 */
 
 Route::get('/', function () {
+    $paises = \App\Pai::all()->pluck('nombre','id');
     return view('welcome.index')
-        ->with('location','inicio');
+        ->with('location','inicio')
+        ->with('paises',$paises);
 });
 
 Auth::routes();
@@ -23,9 +25,7 @@ Route::get('/inicio', 'HomeController@inicio')->name('inicio');
 Route::get('/contenido', 'HomeController@contenido')->name('contenido');
 Route::get('/galeria', 'HomeController@galeria')->name('galeria');
 Route::get('/preguntas', 'HomeController@preguntas')->name('preguntas');
-
-
-Route::post('solicitud/publico/crear/', 'SolicitudController@store')->name('solicitud.store');
+Route::post('solicitud/nueva/publico/crear/', 'SolicitudController@store')->name('solicitud.store2');
 
 //GRUPO DE RUTAS PARA LA ADMINISTRACIÓN
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function() {
