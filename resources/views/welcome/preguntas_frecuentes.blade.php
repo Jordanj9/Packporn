@@ -34,11 +34,41 @@
             </nav>
            <nav class="menu">
                <ul>
-                   <li><a href="">Iniciar Sesiòn</a></li>
-                   <li><a href="index.blade.php">Inicio</a></li>
-                   <li><a href="contenido.blade.php">Contenido</a></li>
-                   <li><a href="galeria.blade.php">Galeria</a></li>
-                   <li><a href="">Preguntas</a></li>
+                   <li>
+                       @if($location == 'login')
+                           <a href="{{route('login')}}" class="activo">Iniciar Sesiòn</a>
+                       @else
+                           <a href="{{route('login')}}">Iniciar Sesiòn</a>
+                       @endif
+                   </li>
+                   <li>
+                       @if($location == 'inicio')
+                           <a href="{{route('inicio')}}" class="activo">Inicio</a>
+                       @else
+                           <a href="{{route('inicio')}}">Inicio</a>
+                       @endif
+                   </li>
+                   <li>
+                       @if($location == 'contenido')
+                           <a href="{{route('contenido')}}" class="activo">Contenido</a>
+                       @else
+                           <a href="{{route('contenido')}}">Contenido</a>
+                       @endif
+                   </li>
+                   <li>
+                       @if($location == 'galeria')
+                           <a href="{{route('galeria')}}" class="activo">Galeria</a>
+                       @else
+                           <a href="{{route('galeria')}}">Galeria</a>
+                       @endif
+                   </li>
+                   <li>
+                       @if($location == 'preguntas')
+                           <a href="{{route('preguntas')}}" class="activo">Preguntas</a>
+                       @else
+                           <a href="{{route('preguntas')}}">Preguntas</a>
+                       @endif
+                   </li>
                </ul>
            </nav>
        </div>

@@ -2,62 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e18e9f7-b479-4f9f-905b-bc3728c45d23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/logo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/main_contenido.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/main_galeria.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/main_inicio.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/main_preguntas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/plugins/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/plugins/swiper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/20190121102958-827790e6-me.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/421902.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Nina-Mercedez-danni-04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/gif-porno-adictas-haciendo-mamadas-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/gif-porno-culos-adictos-follando-6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/gif-porno-culos-adictos-penetradas-anales-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/gif-porno-culos-adictos-penetradas-anales-4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/modelo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/modelo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/modelo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/2276b0e405a1697ca1293425225b-1329815.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/23e75adba30db2d46eec92e23e64-1559921.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/5d1d6d27d71bb6114d86d54073bb-1622331.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/a9e79e03c970c274a2190693977610ab.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/b798c5d4e991138b2f0af2e1d2011643.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/b8b5d94245bf23571d2858c28003-1550379.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/chica_ardiente.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/culo_ardiente.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/descarga.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/ef883471fab5137757ad37ab3881-1653789.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/galeria.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/images.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/packporn.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/sensual.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/women_ass_black_lingerie_black_panties_hands_on_ass_bricks-270413.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/women_ass_tattoo_the_gap_hands_on_ass_hands_thong_Nask_Nach-271426.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/women_black_lingerie_ass_black_stockings_back_hands_on_ass_painted_nails_in_bed-279929.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/women_brunette_kneeling_high_heels_one_piece_swimsuit_ass_back_sideboob-270952.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/packporn/women_tanned_ass_back_water_wet_body_wet_hair_blonde-1213897.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/tumblr_meky49FNs31rmdrjqo1_1280.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plugins/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plugins/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plugins/swiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/swiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome/contenido.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome/galeria.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome/preguntas_frecuentes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome/contenido.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/contenido.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome/galeria.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/galeria.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome/preguntas_frecuentes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/preguntas_frecuentes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -210,8 +160,16 @@
       <workItem from="1574935399935" duration="6339000" />
       <workItem from="1574955698511" duration="99000" />
       <workItem from="1574955935353" duration="7744000" />
-      <workItem from="1575559873878" duration="5707000" />
+      <workItem from="1575559873878" duration="8744000" />
     </task>
+    <task id="LOCAL-00001" summary="version 4.0 05 de diciembre de 2019 12:55 Camilo Colòn">
+      <created>1575568564785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575568564786</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +187,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="version 4.0 05 de diciembre de 2019 12:55 Camilo Colòn" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 4.0 05 de diciembre de 2019 12:55 Camilo Colòn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

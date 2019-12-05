@@ -31,11 +31,35 @@
         </nav>
         <nav class="menu">
             <ul>
-                <li><a href="">Iniciar Sesiòn</a></li>
-                <li><a href="{{route('inicio')}}">Inicio</a></li>
-                <li><a href="{{route('contenido')}}">Contenido</a></li>
-                <li><a href="{{route('galeria')}}">Galeria</a></li>
-                <li><a href="{{route('preguntas')}}">Preguntas</a></li>
+                <li>
+                    @if($location=='inicio')
+                        <a href="{{route('inicio')}}" class="activo">Inicio</a>
+                    @else
+                        <a href="{{route('inicio')}}">Inicio</a>
+                    @endif
+                </li>
+
+                <li>
+                    @if($location=='contenido')
+                        <a href="{{route('contenido')}}" class="activo">Contenido</a>
+                    @else
+                        <a href="{{route('contenido')}}">Contenido</a>
+                    @endif
+                </li>
+                <li>
+                    @if($location=='galeria')
+                        <a href="{{route('galeria')}}" class="activo">Galeria</a>
+                    @else
+                        <a href="{{route('galeria')}}">Galeria</a>
+                    @endif
+                </li>
+                <li>
+                    @if($location=='preguntas')
+                        <a href="{{route('preguntas')}}" class="activo">Preguntas más <br> frecuntes</a>>
+                    @else
+                        <a href="{{route('preguntas')}}">Preguntas más <br> frecuntes</a>
+                    @endif
+                </li>
             </ul>
         </nav>
     </div>
