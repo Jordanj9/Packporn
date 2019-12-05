@@ -1,0 +1,95 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactanos p {
+    color: white;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.contactanos a {
+    color: red;
+    font-size: 16px;
+}
+
+.contactanos {
+     text-align: center;
+}
+
+footer .idioma {
+    display: none;
+}
+
+.slider {
+  display: none;
+}
+
+@media(min-width: 576px){
+    
+    footer .idioma {
+      display: block;
+    }
+
+    footer .contenedor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider {
+        display: block;
+    } 
+
+    .slider ul{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider ul li{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        font-family: 'Fira Code', monospace;
+        text-shadow: 2px 2px 2px black;
+        font-size: 14px;
+        padding:8px 20px;
+        text-align: center;
+        border-radius: 20px;
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+
+    .slider ul li a::before {
+       content: '\f111';
+       font-family: "Font Awesome 5 Pro"; 
+       color: #707070;
+       position: absolute;
+       width: 20px;
+       height: 20px;
+       top: -10px;
+       left: 40%;
+    }
+
+    .slider ul li a.activo:before {
+        content: '\f192';
+        color: red;
+    }
+
+    .slider ul li a {
+        color: white;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px black;
+    }
+  
+}

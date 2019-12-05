@@ -12,12 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome.index')
+        ->with('location','inicio');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/inicio', 'HomeController@inicio')->name('inicio');
+Route::get('/contenido', 'HomeController@contenido')->name('contenido');
+Route::get('/galeria', 'HomeController@galeria')->name('galeria');
+Route::get('/preguntas', 'HomeController@preguntas')->name('preguntas');
+
+
 Route::post('solicitud/publico/crear/', 'SolicitudController@store')->name('solicitud.store');
 
 //GRUPO DE RUTAS PARA LA ADMINISTRACIÓN

@@ -26,8 +26,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
-    <!-- Styles -->
-<!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
+
 </head>
 <body class="hold-transition login-page"
       style="background-image: url('{{asset('images/11.jpg')}}'); background-position: center center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
