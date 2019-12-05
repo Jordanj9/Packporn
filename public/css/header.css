@@ -1,0 +1,153 @@
+header .contenedor {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+
+.menu-desktop {
+    display: none;
+}
+
+.idioma {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.idioma select {
+    position: relative;
+    background:transparent;
+    border:none;
+    color: white;
+    width: 80px;
+    height: 20px;
+    font-size: 14px;
+    text-shadow: 2px 2px 2px black;
+    -webkit-appearance: button;
+}
+
+.idioma select option {
+    background-color: rgba(248, 248, 248, 0.2);
+    text-shadow: 2px 2px 2px black;
+    color: black;
+}
+
+
+.idioma::before{
+    content: "\f0dd";
+    font-family: "Font Awesome 5 Pro"; 
+    font-weight: 900; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 20px;
+    color: red;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+
+header label {
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 2;
+    padding: 0 10px;
+    color: white;
+    z-index: 100;
+}
+
+.menu {
+    z-index: 90;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    background-color: rgba(248, 248, 248, 0.842);
+    border: 1px solid #707070;
+    transition: all 0.5s ease-out;
+} 
+
+.menu ul {
+    margin-top: 138px;
+    padding: 0;
+}
+
+.menu li {
+     display: block;
+     text-decoration: none;
+     font-family: 'Fira Code', monospace;
+     font-size: 26px;
+     padding:8px 0;
+     text-align: center;
+     border-top: 1px solid #707070;
+}
+
+.menu li:last-child {
+    border-bottom: 1px solid #707070;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: red;
+    font-size: 16px;
+}
+
+.menu li:hover {
+    background-color: rgba(248, 248, 248, 0.603);
+}
+.menu li:hover a {
+    color: red;
+}
+
+.menu li.activo {
+     background-color: rgba(248, 248, 248, 0.603);
+}
+
+.menu li.activo a {
+    color: red;
+}
+
+
+@media (min-width: 576px) {
+
+    .idioma,header label {
+      display: none;
+    }
+
+    .menu-desktop {
+        display: block;
+    } 
+
+    .menu-desktop ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction : row-reverse;
+    }
+
+    .menu-desktop ul li{
+        display: inline-block;
+        text-decoration: none;
+        font-family: 'Fira Code', monospace;
+        text-shadow: 2px 2px 2px black;
+        font-size: 12px;
+        padding:8px 20px;
+        text-align: center;
+        border-radius: 20px;
+        border: 1px solid #7C0505;
+        margin-right: 10px;
+    }
+
+    .menu-desktop ul li a {
+        color: white;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px black;
+    }
+
+}

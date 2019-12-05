@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700|Open+Sans&display=swap');
+
+body {
+    overflow: hidden;
+}
+
+.contenido {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+}
+
+
+.contenido section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.informacion {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #870202;
+    border-radius: 30px;
+    width: 25%;
+    margin-right:20px;
+    height: 350px;
+    color: white;
+    text-align: center;
+}
+
+
+.informacion .imagen {
+   width: 100%;
+}
+
+.informacion .imagen a {
+     display: inline-block;
+     margin-top: 30px;
+     font-size: 16px;
+     border-radius: 50%;
+     border: 1px solid  #870202;
+     color: white;
+     padding: 10px 15px;
+     text-shadow: 6px 5px 2px black;
+}
+
+
+.informacion h2 {
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+.informacion p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+
+@media (min-width: 916px) {
+
+    .informacion p {
+        font-size: 14px;
+    }
+
+    .informacion h2 {
+        font-size: 18px;
+    }
+
+    .informacion .imagen a {
+        font-size: 52px;
+   }
+
+}

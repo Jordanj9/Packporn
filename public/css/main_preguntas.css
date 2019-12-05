@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700|Open+Sans&display=swap');
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenido {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.contenido section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    overflow-y: auto;
+}
+
+.card {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: 'Open Sans' sans-serif;
+}
+
+.card-header {
+    border-bottom: 1px solid white;
+}
+
+.card-header button {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+.card-body {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+@media(min-width:768px){
+    .card-body {
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    .card-header button {
+        font-size: 20px;
+
+    }
+}
