@@ -53,17 +53,22 @@ class SolicitudController extends Controller
         $result = $solicitud->save();
         if ($result) {
             $response = $solicitud->alias . "<h5> Has sido suscrito de manera exitosa, hemos enviado un correo a <strong>" . $solicitud->email . "</strong> para continuar con el proceso.";
-            return redirect()->route('inicio');
-            flash($response)->success();
+            return response()->json([
+                'response' => $response,
+                'status' => 'ok'
+            ]);
             $responsecliente = "<h5>Suscripción exitosa!</h5><br><h5>Para continuar con el proceso </h5><p> Haz click en el siguiente enlace</p><a href='https://wa.me/573217064377'>https://wa.me/573217064377</a>";
             Mail::to($solicitud->email)->send(new NotificacionSolicitud($responsecliente));
             $responseAdmin = "<h5>Señor(a) admin se ha recibido una nueva solicitud </h5><br><h5>Detalles de la suscripción </h5><p>Fecha de Solicitud: " . $solicitud->created_at . "<br><h5>Detalles del Solicitante</h5><br><p><b>Alias: " . $solicitud->alias . "</b></p><p><b>Email: " . $solicitud->email . "</b></p>";
             Mail::to('colonca1999@gmail.com')->send(new NotificacionSolicitud($responseAdmin));
-            flash($response)->success();
-            return redirect()->route('inicio');
+            return response()->json([
+                'response' => $response,
+                'status' => 'ok'
+            ]);
         } else {
-            flash("No hemos podido guardar su suscripción, vuelva a intentarlo.")->error();
-            return redirect()->route('inicio');
+            return response()->json([
+                'status' => 'error'
+            ]);
         }
     }
 

@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="{{asset('bower_components/select2/dist/css/select2.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link rel="stylesheet" href="{{asset('css/main_inicio.css')}}">
+    <!-- Plugins -->
+    <link rel="stylesheet" type="text/css" href="{{asset('plugins/chosen_v1.7.0/chosen.css')}}"/>
+    <link href="{{asset('plugins/pnotify/dist/pnotify.css')}}" rel="stylesheet">
+    <link href="{{asset('plugins/pnotify/dist/pnotify.buttons.css')}}" rel="stylesheet">
+    <link href="{{asset('plugins/pnotify/dist/pnotify.nonblock.css')}}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/33bf1ad68d.js" crossorigin="anonymous"></script>
 </head>
-<body style="background-image: url('{{asset('img/packporn/women_tanned_ass_back_water_wet_body_wet_hair_blonde-1213897.jpg')}}');">
+<body
+    style="background-image: url('{{asset('img/packporn/women_tanned_ass_back_water_wet_body_wet_hair_blonde-1213897.jpg')}}');">
 <header>
     <div class="contenedor">
         <h1 class="logo"><strong>P</strong>ack<span><strong>P</strong>orn</span></h1>
@@ -134,7 +140,8 @@
 </footer>
 <div class="modal" tabindex="-1" id="modal-default" role="dialog">
     <div class="modal-dialog" role="document">
-        <div class="modal-content" style="background-image: url('{{asset('img/packporn/women_tanned_ass_back_water_wet_body_wet_hair_blonde-1213897.jpg')}}');">
+        <div class="modal-content"
+             style="background-image: url('{{asset('img/packporn/women_tanned_ass_back_water_wet_body_wet_hair_blonde-1213897.jpg')}}');">
             <div class="modal-header">
                 <h5 class="modal-title">Suscríbirse</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -143,7 +150,7 @@
             </div>
             <div class="modal-body">
                 <div class="col-md-12">
-                    <form method="POST" action="{{route('solicitud.store2')}}">
+                    <form id="formulario" method="POST" action="{{route('solicitud.store2')}}">
                         @csrf
                         <div class="form-group">
                             <label for="alias">Alias</label>
@@ -157,7 +164,8 @@
                         </div>
                         <div class="form-group">
                             <label for="sexo">Sexo</label>
-                            <select class="form-control select2" id="select2" name="sexo" style="width: 100%;" tabindex="-1"
+                            <select class="form-control select2" id="sexo" name="sexo" style="width: 100%;"
+                                    tabindex="-1"
                                     aria-hidden="true" required="required">
                                 <option value="">--selecciones una opción--</option>
                                 <option value="M">HOMBRE</option>
@@ -167,7 +175,7 @@
                         </div>
                         <div class="form-group">
                             <label for="tipopack">Tipo Pack</label>
-                            <select class="form-control select2" name="tipopack" id="select2" style="width: 100%;"
+                            <select class="form-control select2" name="tipopack" id="tipopack" style="width: 100%;"
                                     tabindex="-1" aria-hidden="true" required="required">
                                 <option value="">--selecciones una opción--</option>
                                 <option value="AUDIO">AUDIO</option>
@@ -177,7 +185,7 @@
                         </div>
                         <div class="form-group">
                             <label for="preferencias">Preferencias</label>
-                            <select class="form-control select2" id="select2" name="preferencia"
+                            <select class="form-control select2" id="preferencias" name="preferencia"
                                     style="width: 100%;"
                                     tabindex="-1" aria-hidden="true">
                                 <option value="">--selecciones una opción--</option>
@@ -188,7 +196,7 @@
                         </div>
                         <div class="form-group">
                             <label for="subpreferencias">Sub-Preferencias</label>
-                            <select class="form-control select2" id="select2" name="subpreferencia"
+                            <select class="form-control select2" id="subpreferencias" name="subpreferencia"
                                     style="width: 100%;"
                                     tabindex="-1" aria-hidden="true">
                                 <option value="">--selecciones una opción--</option>
@@ -199,7 +207,7 @@
                         </div>
                         <div class="form-group">
                             <label for="pais">Pais</label>
-                            <select class="form-control select2" id="select2" name="pais_id"
+                            <select class="form-control select2" id="pais" name="pais_id"
                                     style="width: 100%;"
                                     tabindex="-1" aria-hidden="true" required="required">
                                 <option>--selecciones una opción--</option>
@@ -208,8 +216,8 @@
                                 @endforeach
                             </select>
                         </div>
-                        <button type="reset" class="btn btn-secondary">Limpiar</button>
-                        <button type="submit" class="btn btn-danger">Guardar</button>
+                        <button type="button" class="btn btn-secondary">Limpiar</button>
+                        <button type="button" class="btn btn-danger" id="guardar" onclick="guardar()">Guardar</button>
                     </form>
                 </div>
             </div>
@@ -223,10 +231,62 @@
 <script src="{{asset('js/plugins/select2.min.js')}}"></script>
 <script src="{{asset('js/menu.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
+
+<script src="{{ asset('plugins/pnotify/dist/pnotify.js')}}"></script>
+<script src="{{ asset('plugins/pnotify/dist/pnotify.buttons.js')}}"></script>
+<script src="{{ asset('plugins/pnotify/dist/pnotify.nonblock.js')}}"></script>
 <script type="javascript">
     $(document).ready(function () {
-        $("#select2").select2();
+        $("#sexo").select2();
+        $("#tipopack").select2();
+        $("#preferencias").select2();
+        $("#subpreferencias").select2();
+        $("#pais").select2();
     });
+
+    function notify(title, text, type) {
+        new PNotify({
+            title: title,
+            text: text,
+            type: type,
+            styling: 'bootstrap3'
+        });
+    }
+
+    function limpiar() {
+        var alias = $("#alias").val("").trigger('change');
+        var email = $("#email").val("").trigger('change');
+        var sexo = $("#sexo").val("").trigger('change');
+        var tipo = $("#tipopack").val("").trigger('change');
+        var prefe = $("#preferencias").val("").trigger('change');
+        var sub = $("#subpreferencias").val("").trigger('change');
+        var pais = $("#pais").val("").trigger('change');
+    }
+
+    function guardar() {
+        var $request = $("#formulario").serialize();
+        var alias = $("#alias").val();
+        var email = $("#email").val();
+        var sexo = $("#sexo").val();
+        var tipo = $("#tipopack").val();
+        var prefe = $("#preferencias").val();
+        var sub = $("#subpreferencias").val();
+        var pais = $("#pais").val();
+        if (alias.length <= 0 || email.length <= 0 || sexo.length <= 0 || tipo.length <= 0 || pais.length <= 0) {
+            notify('Alerta', 'Debe indicar todos los parámetros para continuar', 'warning');
+            return;
+        }
+        $.post(
+            '{{url('solicitud/nueva/publico/crear/')}}', $request
+        ).done(function (msg) {
+            if (msg.status == "ok") {
+                notify('Atención!', msg.response, 'success');
+                limpiar();
+            } else {
+                notify('Error!', '<h1>Ha surgido un problema</h1><br><p>Error interno. inténtelo otra vez más tarde.</p>', 'danger');
+            }
+        });
+    }
 </script>
 </body>
 </html>

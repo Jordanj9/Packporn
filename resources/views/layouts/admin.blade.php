@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="{{ asset('dist/css/bootstrap-material-design.min.css')}}">
     <link rel="stylesheet" href="{{ asset('dist/css/ripples.min.css')}}">
     <link rel="stylesheet" href="{{ asset('dist/css/MaterialAdminLTE.min.css')}}">
+    <!-- Plugins -->
+    <link rel="stylesheet" type="text/css" href="{{asset('plugins/chosen_v1.7.0/chosen.css')}}"/>
+    <link href="{{asset('plugins/pnotify/dist/pnotify.css')}}" rel="stylesheet">
+    <link href="{{asset('plugins/pnotify/dist/pnotify.buttons.css')}}" rel="stylesheet">
+    <link href="{{asset('plugins/pnotify/dist/pnotify.nonblock.css')}}" rel="stylesheet">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="{{ asset('dist/css/skins/all-md-skins.min.css')}}">
@@ -193,6 +198,10 @@
 <!-- DataTables -->
 <script src="{{ asset('bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
 <script src="{{ asset('bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
+
+<script src="{{ asset('plugins/pnotify/dist/pnotify.js')}}"></script>
+<script src="{{ asset('plugins/pnotify/dist/pnotify.buttons.js')}}"></script>
+<script src="{{ asset('plugins/pnotify/dist/pnotify.nonblock.js')}}"></script>
 <!-- CK Editor -->
 <script src="{{ asset('js/ckeditor/ckeditor.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
@@ -201,7 +210,15 @@
     var url = "<?php echo config('app.url'); ?>public/";
     $(document).ready(function () {
         $('.sidebar-menu').tree()
-    })
+    });
+    function notify(title, text, type) {
+        new PNotify({
+            title: title,
+            text: text,
+            type: type,
+            styling: 'bootstrap3'
+        });
+    }
 </script>
 @yield('script')
 </body>
