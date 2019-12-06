@@ -3,12 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="3e18e9f7-b479-4f9f-905b-bc3728c45d23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SolicitudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SolicitudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/packporn/descarga.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/packporn/descarga.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/packporn/images.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/packporn/images.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome/contenido.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/contenido.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome/galeria.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/galeria.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome/preguntas_frecuentes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome/preguntas_frecuentes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

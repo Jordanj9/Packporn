@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PackPorn</title>
     <link rel="stylesheet" href="{{asset('css/plugins/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('bower_components/select2/dist/css/select2.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link rel="stylesheet" href="{{asset('css/plugins/swiper.css')}}">
     <link rel="stylesheet" href="{{asset('css/main_preguntas.css')}}">
-    <link rel="stylesheet" href="{{asset('bower_components/select2/dist/css/select2.css')}}">
     <script src="https://kit.fontawesome.com/33bf1ad68d.js" crossorigin="anonymous"></script>
 </head>
 <body style="background: url('{{asset('img/packporn/5d1d6d27d71bb6114d86d54073bb-1622331.jpg')}}');background-position:center;object-fit: cover;">
    <header>
-       <div class="contenedor" style="margin-top: 20px;">
+       <div class="contenedor">
            <h1 class="logo"><strong>P</strong>ack<span><strong>P</strong>orn</span></h1>
            <div class="idioma">
                <form action="">

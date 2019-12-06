@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PackPorn</title>
-    <link rel="stylesheet" href="{{asset('css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('css/main_inicio.css')}}">
     <link rel="stylesheet" href="{{asset('css/plugins/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('bower_components/select2/dist/css/select2.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main_inicio.css')}}">
     <script src="https://kit.fontawesome.com/33bf1ad68d.js" crossorigin="anonymous"></script>
 </head>
 <body style="background-image: url('{{asset('img/packporn/women_tanned_ass_back_water_wet_body_wet_hair_blonde-1213897.jpg')}}');">
@@ -134,7 +134,7 @@
 </footer>
 <div class="modal" tabindex="-1" id="modal-default" role="dialog">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content" style="background-image: url('{{asset('img/packporn/women_tanned_ass_back_water_wet_body_wet_hair_blonde-1213897.jpg')}}');">
             <div class="modal-header">
                 <h5 class="modal-title">Suscríbirse</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">

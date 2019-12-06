@@ -1,11 +1,16 @@
 @extends('layouts.app')
+
+@section('style')
+    <link rel="stylesheet" href="{{ asset('css/logo.css') }}">
+@endsection
+
 @section('content')
     <div class="login-box">
-        <div class="login-logo">
-            <a href="../../index2.html">{{config('app.name')}}<b>Valledupar</b></a>
+        <div class="login-logo" style="margin-top: 60px;">
+          <center><a href="{{route('inicio')}}"><h1 class="logo" style="color:black;"><strong>P</strong>ack<span><strong>P</strong>orn</span></h1></a></center>
         </div>
         <!-- /.login-logo -->
-        <div class="login-box-body">
+        <div class="login-box-body" style="border-radius: 30px; opacity: 0.8">
             <p class="login-box-msg">Iniciar Sessión</p>
             <form method="POST" action="{{ route('login') }}">
                 @csrf
@@ -40,13 +45,6 @@
                     @endif
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>  Recordarme
-                            </label>
-                        </div>
-                    </div>
                     <!-- /.col -->
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-danger btn-raised btn-block btn-flat"> Ingresar</button>
@@ -54,7 +52,6 @@
                     <!-- /.col -->
                 </div>
             </form>
-            <a href="{{route('register')}}" class="text-center"> ¿No tienes una cuenta? Registrate</a>
         </div>
         <!-- /.login-box-body -->
     </div>

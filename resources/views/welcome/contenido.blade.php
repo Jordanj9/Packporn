@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PackPorn</title>
-    <link rel="stylesheet" href="{{asset('css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('css/main_contenido.css')}}">
     <link rel="stylesheet" href="{{asset('css/plugins/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('bower_components/select2/dist/css/select2.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main_contenido.css')}}">
     <script src="https://kit.fontawesome.com/33bf1ad68d.js" crossorigin="anonymous"></script>
 </head>
 <body

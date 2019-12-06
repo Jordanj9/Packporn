@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PackPorn</title>
+    <link rel="stylesheet" href="{{asset('css/plugins/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('bower_components/select2/dist/css/select2.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link rel="stylesheet" href="{{asset('css/plugins/swiper.css')}}">
     <link rel="stylesheet" href="{{asset('css/main_galeria.css')}}">
-    <link rel="stylesheet" href="{{asset('css/plugins/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('bower_components/select2/dist/css/select2.css')}}">
     <script src="https://kit.fontawesome.com/33bf1ad68d.js" crossorigin="anonymous"></script>
 </head>
 <body style="background-image: url('{{asset('img/packporn/women_black_lingerie_ass_black_stockings_back_hands_on_ass_painted_nails_in_bed-279929.jpg')}}');">
