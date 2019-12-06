@@ -18,10 +18,13 @@ use Illuminate\Support\Str;
 
 $factory->define(User::class, function (Faker $faker) {
     return [
-        'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
-        'email_verified_at' => now(),
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+        'identificacion' => '1065848333',
+        'nombres' => 'Camilo Andres',
+        'apellidos' => 'Colon Cañizares',
+        'email' => 'colonca1999@gmail.com',
+        'estado' => 'ACTIVO',
+        'rol' => 'ADMINISTRADOR',
+        'password' => \Illuminate\Support\Facades\Hash::make('1065848333'),
         'remember_token' => Str::random(10),
     ];
 });

@@ -16,9 +16,11 @@ class NotificacionSolicitud extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    protected $response;
+
+    public function __construct($response)
     {
-        //
+        $this->response = $response;
     }
 
     /**
@@ -28,6 +30,7 @@ class NotificacionSolicitud extends Mailable
      */
     public function build()
     {
-        return $this->view('mail.sendsolicitud');
+        return $this->view('mail.sendsolicitud')
+              ->with('response',$this->response);
     }
 }

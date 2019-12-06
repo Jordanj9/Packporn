@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('dist/css/bootstrap-material-design.min.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/ripples.min.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/MaterialAdminLTE.min.css') }}">
+    @yield('style')
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com"><!-- Google Font -->
     <link rel="stylesheet"
@@ -29,7 +30,7 @@
 
 </head>
 <body class="hold-transition login-page"
-      style="background-image: url('{{asset('images/11.jpg')}}'); background-position: center center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+      style="background-image: url('{{asset('img/packporn/chica_ardiente.jpg')}}'); background-position: center center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;object-fit: cover;">
 <div id="app">
 
     <div class="col-md-12">
